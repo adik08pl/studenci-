@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Studenci</title>
+</head>
+<body>
+<form action="#" th:action="@{/saveStudent}" method="post">
+    <input type="text" th:field="${formData.firstName}" placeholder="Imię" />
+    <input type="text" th:field="${formData.lastName}" placeholder="Nazwisko" />
+    <input type="number" th:field="${formData.year}" placeholder="Data urodzenia" />
+    <p>Czy jesteś kobietą?<input type="checkbox" th:field="${formData.isFemale}" /></p>
+    <button type="submit">Zapisz</button>
+</form>
+</body>
+</html>
